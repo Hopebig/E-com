@@ -1,137 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce Page</title>
-  </head>
-  <body>
-    
-  </body>
-</html><!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-  </head>
-  <body>
-    <h1 class="product-title">
-      Details
-    </h1>
-    <img src="welcome.png"; class="F21"/>
-    <p>
-      Hp Probook x360 435 G8 Touch 11th Gen AMD RYZEN 7 PRO- 5850U- 16GB RAM/512GB SSD-UP TO 5GHz-Backlit Key/FP Reader Win11 Pro + Bag
-    </p>
-    
-    <p class="F9">
-          Brand:
-      <a href=""; class="F2">
-         Hp | Similar products from Hp
-      </a>
-    </p>
-    <p class="F3">$380.21  
-      <s class="F20";>
-      $585.00
-      </s>
-      <b class="F4">
-        -35%
-      </b>
-    </p>
-    
-    <p class="F5">
-      In stock
-    </p>
-    
-    <t class="F6">
-      +shipping from $30.21 to Boyle-Heights.
-    </t>
-    <t><a href=""; class="F10"><br>
-      See options
-    </a></t>
-    <p>
-      
-    </p>
-    
-    <button class="F7">
-     <
-    </button>
-    
-    <button class="F8"; onclick="location.href='contacts.html'">
-      Add To Cart 
-    </button>
-    
-    <button class="F11">
-      >
-    </button>
-    
-    
-  </body>
-  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HP ProBook x360 - E-commerce Demo</title>
+
   <style>
-    .product-title{font-size: 19.5px;}
-    
-    .f9{font-size:12.91px;
-      color:Black;
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f8f9fa;
+      color: #333;
     }
-    
-    .f3{font-weight:bold;
-      font-size:18px;
+
+    .product-title {
+      font-size: 22px;
+      margin-bottom: 16px;
     }
-    
-    .f4{ background-color:yellow;
-      border-radius:4px;
-      font-size:10px;
-      height:20px;
+
+    .product-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
     }
-    
-    .f5{ font-size:12px}
-    
-    .f7{background-color:blue;
-      color:gold;
-      font-size:26px;
-      border:none;
-      border-radius:17px;
-      height:50px;
-      width:50px;
-      font-weight:bold;
-      }
-      
-    .f8{background-color:gold;
-        color:white;
-        border:none;
-        border-radius:17px;
-        height:50px;
-        width:200px;
-        font-weight:bold;
-        margin-right:px;
-        }
-        
-      .f11{ background-color:blue;
-        color:gold;
-        border:none;
-        border-radius:17px;
-        height:50px;
-        width:50px;
-        font-weight:bold;
-        font-size:26px;
-        margin-left:px;
-      }
-      
-    .f6{font-size:15px}
-    
-    .f10{font-size:13px;}
-    
-    .f5{ color:gray}
-    
-    .F20{ font-size:12px;
-      color:gray;
+
+    .brand {
+      font-size: 13px;
+      color: #555;
+      margin: 8px 0;
     }
-    
-    .f21{ height:300px;
-      width:310px;
+
+    .brand a {
+      color: #0066c0;
+      text-decoration: none;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      color: #b12704;
+      margin: 12px 0;
+    }
+
+    .old-price {
+      font-size: 15px;
+      color: #777;
+      text-decoration: line-through;
+      margin-left: 8px;
+    }
+
+    .discount {
+      background-color: #ffe600;
+      color: black;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin-left: 8px;
+    }
+
+    .stock {
+      font-size: 14px;
+      color: #007600;
+      margin: 8px 0;
+    }
+
+    .shipping {
+      font-size: 14px;
+      color: #555;
+      margin: 8px 0;
+    }
+
+    .see-options {
+      color: #0066c0;
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .arrow-btn {
+      background-color: #0066c0;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
       border: none;
-      border-radius:;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+    }
+
+    .add-to-cart {
+      background-color: #ffd814;
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      padding: 14px 32px;
+      cursor: pointer;
+      min-width: 180px;
+    }
+
+    .add-to-cart:hover {
+      background-color: #f7ca00;
     }
   </style>
-</html> 
+</head>
+<body>
+
+  <h1 class="product-title">Details</h1>
+
+  <img src="welcome.png" alt="HP ProBook x360" class="product-image" />
+
+  <p>
+    Hp Probook x360 435 G8 Touch 11th Gen AMD RYZEN 7 PRO- 5850U- 16GB RAM/512GB SSD-UP TO 5GHz-Backlit Key/FP Reader Win11 Pro + Bag
+  </p>
+
+  <p class="brand">
+    Brand: 
+    <a href="#">Hp | Similar products from Hp</a>
+  </p>
+
+  <p class="price">
+    $380.21
+    <span class="old-price">$585.00</span>
+    <span class="discount">-35%</span>
+  </p>
+
+  <p class="stock">In stock</p>
+
+  <p class="shipping">
+    +shipping from $30.21 to Boyle-Heights.
+    <br>
+    <a href="#" class="see-options">See options</a>
+  </p>
+
+  <div class="buttons">
+    <button class="arrow-btn"><</button>
+    
+    <!-- Changed to contacts.html here -->
+    <button class="add-to-cart" onclick="location.href='contacts.html'">
+      Add To Cart
+    </button>
+    
+    <button class="arrow-btn">></button>
+  </div>
+
+</body>
+</html>
