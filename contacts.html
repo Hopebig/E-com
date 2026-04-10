@@ -1,60 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Just Understanding it</title>
-  </head>
-  <body>
-    
-    <h2 class="O1">
-    Anonymous 
-    </h2>
-    
-    <h4 class="O2">
-      <br>
-        Introduction:
-      </br>
-      <p>
-        
-      </p>
-      Really didn't know what it will be like But it's just plain basics of html and a bit of css, A bit dull but i did it myself.
-    </h4>
-    <p>
-   
-    </p> 
-     <h4 class="O3">
-      This is a simple html webpage i created today it's a very plain one, still learning the process.
-     </h4>
-   <style>
-    .O1{ color:white;
-      height:60px;
-      width:100%;
-      background-color:black;
-      font-weight:bold;
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in to continue • E-commerce</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px 20px;
       text-align: center;
-      border-:200px;
-      border-color:gray;
+      background: #f9f9f9;
+    }
+    h1 {
+      font-size: 28px;
+      color: blue;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #666;
+      margin-bottom: 40px;
+      font-size: 17px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 22px;
+      color: #222;
+      margin-bottom: 15px;
+    }
+    .option {
+      display: block;
+      width: 300px;
+      margin: 12px auto;
+      padding: 16px;
+      background-color: gold;
+      color: white;
+      border: none;
       border-radius: 17px;
-      border-left: 15px;;
-      
-    
-      
-      
-      
-      
-      
-      
-      
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s;
     }
-    
-    .O2{font-weight:bold;
-    color:;
+    .option:hover {
+      background-color: #e6b800;
+      transform: translateY(-3px);
     }
-    
-    .O3{ font-weight:bold;
-      
+    .back {
+      color: blue;
+      text-decoration: underline;
+      margin-top: 30px;
+      display: inline-block;
+      font-size: 16px;
     }
-   </style>
-  </body>
+  </style>
+</head>
+<body>
+
+  <h1>You don't have an account</h1>
+  <p>To add this item to your cart, please log in or sign up below.</p>
+
+  <!-- LOGIN SECTION -->
+  <div class="section">
+    <h2>Log In</h2>
+    <a href="#" class="option">📧 Log in with Email</a>
+    <a href="#" class="option">📱 Log in with Phone Number</a>
+    <a href="#" class="option">🔵 Log in with Google</a>
+  </div>
+
+  <!-- SIGN UP SECTION -->
+  <div class="section">
+    <h2>Sign Up</h2>
+    <a href="#" class="option">📧 Sign up with Email</a>
+    <a href="#" class="option">📱 Sign up with Phone Number</a>
+    <a href="#" class="option">🔵 Sign up with Google</a>
+  </div>
+
+  <a href="index.html" class="back">← Back to product page</a>
+
+</body>
 </html>
